@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Biblioteca.Models;
+namespace ProjetoBiblioteca.Models;
 
 //Classe que representa o EF dentro do projeto
 public class AppDataContext : DbContext
