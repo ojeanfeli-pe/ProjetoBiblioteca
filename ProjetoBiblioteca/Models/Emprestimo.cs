@@ -2,14 +2,11 @@ namespace Biblioteca.Models;
 
 public class Emprestimo
 {
-    //Construtor
-    public Emprestimo()
-    {
-        DataEmprestimo = DateTime.Now;
-        DataDevolucao = DateTime.Now;
-    }
-
+    public int Id { get; set; }
+    public int LivroId { get; set; }
+    public Livro Livro { get; set; }
+    public int UsuarioId { get; set; }
+    public Usuario Usuario { get; set; }
     public DateTime DataEmprestimo { get; set; }
-    public DateTime DataDevolucao { get; set; }
-
+    public DateTime? DataDevolucao { get; set; }
 }
